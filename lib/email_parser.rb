@@ -14,6 +14,6 @@ class EmailAddressParser
     email_array.each do |e|
       final_email_array << e if !final_email_array.include?(e)
     end
-    email_array
+    final_email_array
   end
 end
