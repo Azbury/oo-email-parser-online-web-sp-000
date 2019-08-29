@@ -9,6 +9,7 @@ class EmailAddressParser
 
   def parse
     email_array = @email_string.split(/\,|\ /)
+    email_array.delete_if {|e| e.size < 1}
     email_array
   end
 end
